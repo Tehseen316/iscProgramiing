@@ -6,11 +6,11 @@
     </head>
    
 
-    <body>
+    <body> 
         <script>
             function weightlimit() {
                 
-                let a;
+                let a = document.getElementById(war).value;
 
                 if(a>15) {
                     window.alert('Your wirght is greater than 15')
@@ -26,7 +26,7 @@
         <p>Enter the weight</p>
         
         
-        <button onclick="weightlimit">Check the limit <input type="number"></button>
+        <button onclick="weightlimit">Check the limit <input type="number" id="war"></button>
 
 
     </body>
