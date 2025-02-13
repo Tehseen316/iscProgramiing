@@ -93,19 +93,19 @@
     <p>Enter the Number B</p>
     <input type="number" id="y">
     <p>Enter the Number N</p>
-    <input type="textarea" id="z">
+    <textarea id="z">
 
     <button onclick="onButtonClick()">Calculate Sum</button>
 
     <script>
         
-        function f4(a, b, l) {
+        function f4(x, y, z) {
             let sum = 0; 
 
             
-            for (let i = 0; i < l.length; i++) {
-                if (l[i] % a === 0 || l[i] % b === 0) {
-                    sum += l[i];  
+            for (let i = 0; i <z.length; i++) {
+                if (z[i] % x === 0 || z[i] % y === 0) {
+                    sum += z[i];  
                 }
             }
 
@@ -115,8 +115,9 @@
         
         function onButtonClick() {
             
-            let a = parseInt(document.getElementById("a").value);  
-            let b = parseInt(document.getElementById("b").value);  
+            let x = parseInt(document.getElementById("a").value);  
+            let y = parseInt(document.getElementById("b").value);  
+            let z = document.getElementById("z").value.split(",").map(Number);
 
             
         
