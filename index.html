@@ -49,7 +49,41 @@
         <h2>Excercise no 2</h2>
         <p>Enter a Number</p>
         <input type="number" id="natural">
-        <button onclick="doIT()">Press me!</button></p>
+        <button onclick="doIT()">Press me!</button>
+
+
+        <h3>Excercise no 3</h2>
+
+            <p>Enter the Number A</p>
+            <input type="number" id="a">
+            <p>Enter the Number B</p>
+            <input type="number" id="b">
+            <p>Enter the Number N</p>
+            <input type="number" id="n">
+
+            <button onclick="excercises()"></button>
+
+
+            <script>
+                function excercises() {
+
+            let a=document.getElementById(a).value;
+            let b=document.getElementById(b).value;
+            let ca=document.getElementById(c).value;
+
+            a = parseInt(a);
+            b = parseInt(b);
+            n = parseInt(n);
+
+            let final=0;
+            if (i % a === 0 || i % b === 0) {
+                    final += i;
+                }
+                alert("The sum of multiples of " + a + " or " + b + " below " + n + " is: " + final);
+
+            }
+            </script>
+
 
 
     </body>
