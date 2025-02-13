@@ -22,6 +22,28 @@
             }
         </script>
 
+<script>
+    function doIT(){
+
+   let natural = document.getElementById(num).value;
+   natural=parseInt(natural);
+
+
+   let total=0;
+
+   for (let i = 0; i < natural; i++) {
+        if (i % 3 === 0 || i % 5 === 0) {
+            total += i;
+        }
+    }
+
+    alert("The sum of multiples of 3 or 5 below " + natural + " is: " + total);
+
+   }
+
+</script>
+
+
         <h1>Excercise no 1</h1>
         <p>Enter the weight</p>
         
@@ -35,27 +57,7 @@
         <button onclick="doIT()">Press me!</button></p>
 
 
-        <script>
-            function doIT(){
-
-           let natural = document.getElementById(num).value;
-           natural=parseInt(natural);
-
-
-           let total=0;
-
-           for (let i = 0; i < natural; i++) {
-                if (i % 3 === 0 || i % 5 === 0) {
-                    total += i;
-                }
-            }
-
-            alert("The sum of multiples of 3 or 5 below " + natural + " is: " + total);
-
-           }
-
-        </script>
-
+        
 
 
     </body>
