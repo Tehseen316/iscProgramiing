@@ -86,6 +86,48 @@
         
             </script>
 
+<h3>Excercise no 4</h2>
+
+    <p>Enter the Number One</p>
+    <input type="number" id="x">
+    <p>Enter the Number B</p>
+    <input type="number" id="y">
+    <p>Enter the Number N</p>
+    <input type="textarea" id="z">
+
+    <button onclick="onButtonClick()">Calculate Sum</button>
+
+    <script>
+        
+        function f4(a, b, l) {
+            let sum = 0; 
+
+            
+            for (let i = 0; i < l.length; i++) {
+                if (l[i] % a === 0 || l[i] % b === 0) {
+                    sum += l[i];  
+                }
+            }
+
+            return sum;  
+        }
+
+        
+        function onButtonClick() {
+            
+            let a = parseInt(document.getElementById("a").value);  
+            let b = parseInt(document.getElementById("b").value);  
+
+            
+        
+
+            
+            let result = f4(a, b, l); 
+
+            
+            alert("The sum of multiples of " + a + " or " + b + " in the array is: " + result);  
+        }
+</script>
 
 
     </body>
