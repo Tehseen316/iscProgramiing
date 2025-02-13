@@ -69,19 +69,21 @@
 
             let a=document.getElementById(a).value;
             let b=document.getElementById(b).value;
-            let ca=document.getElementById(c).value;
+            let n=document.getElementById(n).value;
 
             a = parseInt(a);
             b = parseInt(b);
             n = parseInt(n);
 
             let final=0;
+            for (let i = 0; i < n; i++) {
             if (i % a === 0 || i % b === 0) {
                     final += i;
                 }
                 alert("The sum of multiples of " + a + " or " + b + " below " + n + " is: " + final);
 
             }
+        }
             </script>
 
 
