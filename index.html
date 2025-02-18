@@ -131,6 +131,51 @@
 </script>
 
 
+
+<p>Exercise 5, Arrays: f5 should take array parameters and return an integer.</p>
+    <p>Create a page with a button and two wide input boxes, labelled a and l</p>
+    <p>Create a function f5 to return the sum of all the multiples of factors in a 
+        found in in l (a and l should be arrays of integers, a is of length 2)</p>
+    <p>Call the function f5 in the function called by onClick, and alert the user to the 
+        returned answer when they press the button.</p>
+    </p>
+   
+    <p>Please enter A number</p>
+    <input type="text"  id="ainteger">
+
+    <p>Please enter L number</p>
+    <input type="text"  id="linteger">
+
+    <button onclick="full()">Hey Press Me!</button>
+    <script>
+
+        
+
+        function f5(a,l){
+
+            let sum=0;
+            for(let x=0; x < l.length ; x++)
+
+                if (l[x]%a[0]===0 || l[x]%a[1]===0){
+                    sum+=l[x];
+                 }
+            }
+            return sum;
+
+        }
+        function full(){
+
+            let arr1 = document.getElementById("ainteger");
+            let arr2 = document.getElementById("linteger");
+            let sum=f5(arr1, arr2);
+            alert (`sum of all the multiples of ${arr1[0]} and ${arr1[1]} in Array L  is  ${sum}`)
+
+        }
+
+    </script>
+
+
+
     </body>
 
 </html>
